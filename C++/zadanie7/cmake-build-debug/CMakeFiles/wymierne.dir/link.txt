@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/wymierne.dir/main.cpp.o CMakeFiles/wymierne.dir/wymierne.cpp.o  -o wymierne 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/CLionProjects/wymierne/main.cpp
+iostream
+-
+wymierne.hpp
+/home/krzysztof/CLionProjects/wymierne/wymierne.hpp
+
+/home/krzysztof/CLionProjects/wymierne/wymierne.hpp
+iostream
+-
+climits
+-
+
