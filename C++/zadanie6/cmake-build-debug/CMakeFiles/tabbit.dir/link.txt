@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/tabbit.dir/main.cpp.o CMakeFiles/tabbit.dir/wyrazenie.cpp.o CMakeFiles/tabbit.dir/stale.cpp.o CMakeFiles/tabbit.dir/zmienne.cpp.o  -o tabbit 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/CLionProjects/zadanie4/main.cpp
+iostream
+-
+cstdlib
+-
+stos.h
+/home/krzysztof/CLionProjects/zadanie4/stos.h
+
+/home/krzysztof/CLionProjects/zadanie4/stos.h
+

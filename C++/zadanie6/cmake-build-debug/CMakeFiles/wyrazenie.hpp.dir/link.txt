@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/wyrazenie.hpp.dir/main.cpp.o CMakeFiles/wyrazenie.hpp.dir/wyrazenie.cpp.o CMakeFiles/wyrazenie.hpp.dir/stale.cpp.o CMakeFiles/wyrazenie.hpp.dir/zmienne.cpp.o  -o wyrazenie.hpp 

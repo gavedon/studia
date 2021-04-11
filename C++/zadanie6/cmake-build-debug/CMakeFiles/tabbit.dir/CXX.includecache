@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/CLionProjects/tabbit/main.cpp
+wyrazenie.hpp
+/home/krzysztof/CLionProjects/tabbit/wyrazenie.hpp
+
+/home/krzysztof/CLionProjects/tabbit/wyrazenie.cpp
+wyrazenie.hpp
+/home/krzysztof/CLionProjects/tabbit/wyrazenie.hpp
+
+/home/krzysztof/CLionProjects/tabbit/wyrazenie.hpp
+iostream
+-
+string
+-
+cmath
+-
+vector
+-
+
+/home/krzysztof/CLionProjects/tabbit/zmienne.cpp
+wyrazenie.hpp
+/home/krzysztof/CLionProjects/tabbit/wyrazenie.hpp
+

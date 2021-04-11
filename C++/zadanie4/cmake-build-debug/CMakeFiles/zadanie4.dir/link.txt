@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/zadanie4.dir/main.cpp.o CMakeFiles/zadanie4.dir/stos.cpp.o  -o zadanie4 
