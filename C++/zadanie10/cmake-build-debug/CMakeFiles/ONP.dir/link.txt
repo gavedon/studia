@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ONP.dir/main.cpp.o CMakeFiles/ONP.dir/zmienna.cpp.o CMakeFiles/ONP.dir/symbol.cpp.o CMakeFiles/ONP.dir/stala.cpp.o CMakeFiles/ONP.dir/operand.cpp.o CMakeFiles/ONP.dir/liczba.cpp.o CMakeFiles/ONP.dir/funkcja.cpp.o  -o ONP 
