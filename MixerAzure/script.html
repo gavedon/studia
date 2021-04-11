@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+	<title>Praca Licencjacka</title>
+	<script>
+        var tab=Array("https://docs.google.com/forms/d/1aNIyywppw5XhmkxlvaCf-R6h-HqM8qmUGDZiV3M1p4Q/viewform?edit_requested=true",
+					  "https://docs.google.com/forms/d/1Lk1nJruNuQpIRkBRHOqKHN4GbOtgCl6NsKuguJW--lo/viewform?edit_requested=true",
+					  "https://docs.google.com/forms/d/1b3HtbFP0GaS5iVq3qIUGf6B2N3DxyC1o6XDfy80bHs0/viewform?edit_requested=true");
+		var idx=getRandomIntInclusive(0, 2)
+        var btn=document.createElement("a");
+        btn.href=tab[idx];
+        btn.click();
+		function getRandomIntInclusive(min, max) 
+		{
+ 			 min = Math.ceil(min);
+		  	 max = Math.floor(max);
+  			 return Math.floor(Math.random() * (max - min + 1)) + min;
+		};
+	</script>
+</head>
