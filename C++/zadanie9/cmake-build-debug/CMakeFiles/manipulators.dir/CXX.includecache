@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/CLionProjects/manipulators/main.cpp
+iostream
+-
+manipulatorzzz.hpp
+/home/krzysztof/CLionProjects/manipulators/manipulatorzzz.hpp
+vector
+-
+algorithm
+-
+
+/home/krzysztof/CLionProjects/manipulators/manipulatorzzz.cpp
+manipulatorzzz.hpp
+/home/krzysztof/CLionProjects/manipulators/manipulatorzzz.hpp
+iostream
+-
+
+/home/krzysztof/CLionProjects/manipulators/manipulatorzzz.hpp
+iostream
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/task2.dir/main.cpp.o CMakeFiles/task2.dir/wejscie_i_wyjscie.cpp.o  -o task2 

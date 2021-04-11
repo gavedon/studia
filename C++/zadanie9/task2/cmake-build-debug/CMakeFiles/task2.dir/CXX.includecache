@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/CLionProjects/manipulators/task2/main.cpp
+iostream
+-
+cstdlib
+-
+wejscie_i_wyjscie.hpp
+/home/krzysztof/CLionProjects/manipulators/task2/wejscie_i_wyjscie.hpp
+
+/home/krzysztof/CLionProjects/manipulators/task2/wejscie_i_wyjscie.hpp
+fstream
+-
+iostream
+-
+string
+-
+
