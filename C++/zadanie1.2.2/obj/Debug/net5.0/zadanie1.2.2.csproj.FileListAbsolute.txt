@@ -1,0 +1,16 @@
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2.deps.json
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2.runtimeconfig.json
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2.runtimeconfig.dev.json
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2.dll
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/ref/zadanie1.2.2.dll
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/bin/Debug/net5.0/zadanie1.2.2.pdb
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.csprojAssemblyReference.cache
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.GeneratedMSBuildEditorConfig.editorconfig
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.AssemblyInfoInputs.cache
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.AssemblyInfo.cs
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.csproj.CoreCompileInputs.cache
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.dll
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/ref/zadanie1.2.2.dll
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.pdb
+/home/krzysztof/RiderProjects/lista2/zadanie1.2.2/obj/Debug/net5.0/zadanie1.2.2.genruntimeconfig.cache
