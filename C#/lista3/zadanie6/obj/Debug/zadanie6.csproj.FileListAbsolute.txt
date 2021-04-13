@@ -1,0 +1,6 @@
+/home/krzysztof/RiderProjects/lista3/zadanie6/bin/Debug/zadanie6.exe
+/home/krzysztof/RiderProjects/lista3/zadanie6/bin/Debug/zadanie6.pdb
+/home/krzysztof/RiderProjects/lista3/zadanie6/obj/Debug/zadanie6.csprojAssemblyReference.cache
+/home/krzysztof/RiderProjects/lista3/zadanie6/obj/Debug/zadanie6.csproj.CoreCompileInputs.cache
+/home/krzysztof/RiderProjects/lista3/zadanie6/obj/Debug/zadanie6.exe
+/home/krzysztof/RiderProjects/lista3/zadanie6/obj/Debug/zadanie6.pdb
