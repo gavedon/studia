@@ -1,0 +1,136 @@
+# callgrind format
+version: 1
+creator: callgrind-3.15.0
+pid: 73508
+cmd:  ./main -r 1000
+part: 1
+
+
+desc: I1 cache: 32768 B, 64 B, 8-way associative
+desc: D1 cache: 32768 B, 64 B, 8-way associative
+desc: LL cache: 8388608 B, 64 B, 16-way associative
+
+desc: Timerange: Basic block 0 - 51082
+desc: Trigger: Program termination
+
+positions: line
+events: Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw Bc Bcm Bi Bim
+summary: 264 83 0 5 0 0 5 0 0 19 5
+
+
+ob=(5) /home/krzysztof/ASK/cube/cubef-gavedon/main
+fl=(118) /home/krzysztof/ASK/cube/cubef-gavedon/main.c
+fn=(376) main
+cfn=(418) run
+calls=8 69 
+124 264 83 0 5 0 0 5 0 0 19 5
+
+fn=(418)
+cfi=(126) /home/krzysztof/ASK/cube/cubef-gavedon/cubef.s
+cfn=(420) cubef
+calls=8 33 
+74 264 83 0 5 0 0 5 0 0 19 5
+
+fl=(126)
+fn=(420)
+33 8
++1 8
++1 8
++2 8 8
++1 8 8 0 1 0 0 1
++1 8
++1 8 8
++1 8
++1 8 0 0 0 0 0 0 0 0 8 3
++1 5 5
++1 5 0 0 0 0 0 0 0 0 5 2
++3 3 3
++1 3
++1 3
++1 3
++3 3 0 0 1 0 0 1
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3 3
++4 3
++1 3 3
++1 3
++2 3
++1 3
++1 3
++2 3 3
++1 3 3 0 1 0 0 1
++1 3 3
++1 3 3
++1 3
++1 3 3
++1 3
++1 3 0 0 0 0 0 0 0 0 3
++1 3 3
++1 3 0 0 0 0 0 0 0 0 3
++3 3 3 0 1 0 0 1
++1 3 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++4 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++1 3
++3 3
++1 3 3
++1 3
++1 3 3
++1 3 3 0 1 0 0 1
++1 3 3
++1 2 2
++1 2 2
++1 2
++1 2 2
+
+fl=(111) ???
+fn=(348) _start
+cob=(3) /lib/x86_64-linux-gnu/libc-2.31.so
+cfi=(112) /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c
+cfn=(350) (below main)
+calls=1 137 
+0 264 83 0 5 0 0 5 0 0 19 5
+
+ob=(3)
+fl=(112)
+fn=(350)
+cob=(5)
+cfi=(118)
+cfn=(376)
+calls=1 92 
+308 264 83 0 5 0 0 5 0 0 19 5
+
+ob=(1) /lib/x86_64-linux-gnu/ld-2.31.so
+fl=(1) ???
+fn=(0) 0x0000000000001100
+cob=(5)
+cfi=(111)
+cfn=(348)
+calls=1 0 
+0 264 83 0 5 0 0 5 0 0 19 5
+
+totals: 264 83 0 5 0 0 5 0 0 19 5
