@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 1</title>
+    <script src="zadanie1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    Numer konta:
+    <input onblur="check_account()" id="account" placeholder="Numer Konta"><span id="account_false"></span><br><br> E-mail:
+    <input onblur="check_mail()" id="mail" placeholder="E-mail"><span id="mail_false"></span><br><br> Pesel:
+    <input onblur="check_pesel()" id="pesel" placeholder="Pesel"><span id="pesel_false"></span><br><br> Data przelewu:
+    <input onblur="check_birthdatedate()" id="date" type="date"><span id="date_false"></span><br><br>
+    <button onclick="send()" id="send_message" type="text"> Wyslij </button>
+    <span id="show_message"></span>
+</body>
+
+</html>
